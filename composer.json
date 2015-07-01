@@ -1,0 +1,21 @@
+{
+    "name": "futureisblank/utils",
+    "description": "Blank's utils",
+    "type": "package",
+    "require": {
+        "twig/twig": "^2.0@dev",
+        "php": ">=5.3.0"
+    },
+    "authors": [
+        {
+            "name": "goatyeah",
+            "email": "cazin.gaultier@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "Blank": "src/"
+        }
+    }
+}
