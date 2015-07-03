@@ -29,6 +29,9 @@
     "autoload": {
         "psr-0": {
             "Blank": "src/"
-        }
+        },
+        "files": [
+            "src/Component/Component.php"
+        ]
     }
 }
