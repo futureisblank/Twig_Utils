@@ -1,5 +1,6 @@
 {
     "name": "blank/utils",
+    "type": "library",
     "description": "Blank's utils",
     "authors": [
         {

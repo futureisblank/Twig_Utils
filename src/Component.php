@@ -1,9 +1,14 @@
 <?php 
 
+use Twig_;
 namespace Blank;
 
 class Component extends \Twig_Extension
 {
+
+    function __construct(){
+        spl_autoload_register(__NAMESPACE__ . "\\Component::autoload");
+    }
 
   	public static function getName()
     {
