@@ -2,7 +2,7 @@
 
 namespace Blank;
 
-class Components extends \Twig_Extension
+class Component extends \Twig_Extension
 {
 
   	public static function getName()
