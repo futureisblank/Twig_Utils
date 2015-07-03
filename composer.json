@@ -1,7 +1,6 @@
 {
     "name": "blank/utils",
     "description": "Blank's utils",
-    "type": "package",
     "authors": [
         {
             "name": "goatyeah",
