@@ -1,6 +1,6 @@
 <?php 
 
-namespace \Blank;
+namespace Blank;
 
 class Components extends \Twig_Extension
 {
