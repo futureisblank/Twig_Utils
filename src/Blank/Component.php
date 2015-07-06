@@ -1,4 +1,4 @@
-<?php namespace Blank;
+<?php 
 
 class Component extends \Twig_Extension
 {
