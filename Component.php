@@ -27,7 +27,12 @@ class Component extends \Twig_Extension
 
     public function get_component(\Twig_Environment $twig, $name, $data)
     {
-    	$html = $twig->render('components/'.$name.'.html.twig', $data );
+        $path = explode( '/',$name);
+        if( count($path) > 1 ){
+    	   $html = $twig->render( $name.'.html.twig', $data );
+        }else {
+           $html = $twig->render('components/'.$name.'.html.twig', $data );
+        }
     	return $html;
     }
 }
