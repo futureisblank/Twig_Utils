@@ -1,4 +1,14 @@
-<?php namespace Blank;
+<?php 
+
+namespace Twig\Blank;
+
+
+/**
+ * Slim - a micro PHP 5 framework
+ *
+ * @package     TwigBlank
+ *
+ */
 
 class Component extends \Twig_Extension
 {
