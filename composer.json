@@ -1,5 +1,5 @@
 {
-    "name": "blank/utils",
+    "name": "twig/blank",
     "type": "library",
     "description": "Blank's utils",
     "authors": [
