@@ -2,4 +2,6 @@
 
 require dirname(dirname(dirname(dirname(__FILE__)))) . '/autoload.php'; // Autoload files using Composer autoload
 
-echo \Blank\Component::getName();
+use Blank\Component;
+
+echo Blank\Component::getName();
