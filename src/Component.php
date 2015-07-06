@@ -1,8 +1,7 @@
 <?php 
 
-use Twig_;
 namespace Blank;
-
+use \Twig_Extension;
 class Component extends \Twig_Extension
 {
 
