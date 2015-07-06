@@ -1,5 +1,5 @@
 <?php 
 
-require_once dirname(dirname(dirname(dirname(__FILE__)))) . '/autoload.php'; // Autoload files using Composer autoload
+require dirname(dirname(dirname(dirname(__FILE__)))) . '/autoload.php'; // Autoload files using Composer autoload
 
-echo Blank\Component::getName();
+echo \Blank\Component::getName();
