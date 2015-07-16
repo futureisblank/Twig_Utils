@@ -3,12 +3,10 @@
 ## Installation
 
 A ajouter dans le fichier composer.json
-
+```
 {
     "require": {
-		....
         "twig/blank": "dev-master"
-		....
     },
     "repositories": [
     {
@@ -16,3 +14,4 @@ A ajouter dans le fichier composer.json
         "url": "git@github.com:futureisblank/Twig_Utils.git"
     }]
 }
+```
