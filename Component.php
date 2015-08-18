@@ -41,7 +41,7 @@ class Component extends \Twig_Extension
     {
         $path = explode( '/',$name);
         if( count($path) > 1 ){
-            if( file_exists($name.'.html.twig') ) {
+            if( file_exists('App/views/' . $name . '.html.twig') ) {
                 return true;
             } else {
                 return false;
