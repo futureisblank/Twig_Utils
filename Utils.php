@@ -1,11 +1,11 @@
-<?php 
+<?php
 
 namespace Twig\Blank;
 
 class Utils extends \Twig_Extension
 {
 
-  	public function getName()
+    public function getName()
     {
         return 'twig_utils';
     }
@@ -23,7 +23,7 @@ class Utils extends \Twig_Extension
 
     public function getFunctions()
     {
-		return array(
+        return array(
             'file_exists' => new \Twig_Function_Function('file_exists'),
             'print_r' => new \Twig_Function_Function('print_r'),
             'var_dump' => new \Twig_Function_Function('var_dump'),
@@ -31,6 +31,7 @@ class Utils extends \Twig_Extension
             'die' => new \Twig_Function_Function('die'),
             'substr' => new \Twig_Function_Function('substr'),
 
+            'encode_data' => new \Twig_Function_Method($this, 'encode_data'),
             'handleize' => new \Twig_Function_Method($this, 'handleize'),
             'getUrl' => new \Twig_Function_Method($this, 'get_url'),
             'icons' => new \Twig_Function_Method($this, 'icons', array('is_safe' => array('html'))),
@@ -46,11 +47,19 @@ class Utils extends \Twig_Extension
     {
         return array(
             'handleize' => new \Twig_Filter_Method($this, 'handleize'),
+            'encode_data' => new \Twig_Filter_Method($this, 'encode_data'),
             'translate' => new \Twig_Filter_Method($this, 'translate')
-        ); 
+        );
     }
 
     // Functions
+
+
+    public function encode_data($str)
+    {
+        $str = base64_encode(json_encode($str));
+        return $str;
+    }
 
     public function handleize($str)
     {
@@ -73,7 +82,7 @@ class Utils extends \Twig_Extension
     }
 
     public function translate($key)
-    {   
+    {
         if (array_key_exists($key, $this->translations)){
             return $this->translations->{$key};
         }
